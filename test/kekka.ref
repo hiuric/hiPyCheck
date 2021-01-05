@@ -1,0 +1,48 @@
+====== CHCEK : nestScope.py ======
+nestScope.py:2	a 	NOT FOUND
+nestScope.py:7	b 	ASSIGN to GLOBAL (int)
+nestScope.py:8	c 	NOT FOUND
+nestScope.py:15	d 	ALREADY DEFINED
+nestScope.py:18	d 	ALREADY DEFINED
+nestScope.py:19	e 	NOT FOUND
+nestScope.py:19	e 	USED in inner scope
+nestScope.py:20	f 	NOT FOUND
+nestScope.py:25	b 	REDEFINE of GLOBAL
+nestScope.py:28	d 	NOT FOUND
+nestScope.py:37	c 	NOT FOUND
+- 11 ERRORs -
+====== CHCEK : selfScope.py ======
+selfScope.py:7	self.b 	NOT FOUND
+selfScope.py:15	self.y 	NOT FOUND
+selfScope.py:20	self.c 	ALREADY DEFINED
+selfScope.py:22	self.y 	ALREADY DEFINED
+selfScope.py:29	self.b 	NOT FOUND
+selfScope.py:33	self.x 	NOT FOUND
+- 6 ERRORs -
+====== CHCEK : globalScope.py ======
+globalScope.py:10	g 	ASSIGN to GLOBAL (int)
+globalScope.py:11	h 	ASSIGN to GLOBAL (int)
+globalScope.py:23	g 	REDEFINE of GLOBAL
+globalScope.py:24	h 	REDEFINE of GLOBAL
+globalScope.py:28	g 	ASSIGN to GLOBAL (int)
+globalScope.py:29	h 	ASSIGN to GLOBAL (int)
+globalScope.py:51	g 	ASSIGN to GLOBAL (int)
+globalScope.py:52	h 	ASSIGN to GLOBAL (int)
+globalScope.py:64	g 	REDEFINE of GLOBAL
+globalScope.py:65	h 	REDEFINE of GLOBAL
+globalScope.py:69	g 	ASSIGN to GLOBAL (int)
+globalScope.py:70	h 	ASSIGN to GLOBAL (int)
+- 12 ERRORs -
+====== CHCEK : defScopes.py ======
+defScopes.py:5	y 	NOT FOUND
+defScopes.py:7	y 	NOT FOUND
+defScopes.py:8	y 	NOT FOUND
+defScopes.py:8	y 	USED in inner scope
+defScopes.py:20	y 	NOT FOUND
+defScopes.py:20	y 	USED in inner scope
+defScopes.py:27	y 	USED in inner scope
+defScopes.py:28	z 	ALREADY DEFINED
+defScopes.py:31	z 	ASSIGN to GLOBAL (int)
+defScopes.py:33	z 	ASSIGN to GLOBAL (int)
+defScopes.py:34	z 	ASSIGN to GLOBAL (int)
+- 11 ERRORs -

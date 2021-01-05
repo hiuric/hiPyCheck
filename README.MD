@@ -17,6 +17,7 @@
      if a==0 :
         x=3      # OK. 定義済みx参照
         y:int=5  # OK.
+        z=7      # ERR. 定義なし
         # なんだかんだ
      else:
         x:int=13 # ERR. 定義済みxと衝突
@@ -37,12 +38,13 @@
       def func1()
          self.x=5     # OK  initで定義されている
          self.y:int=7 # ERR initで定義済み
+         self.z=13    # ERR 定義なし
 ```
 ### DEF内でのGLOBAL変数への代入はエラーとする
 ```
    a:int=5 # 変数定義
    def func():
-      a = 10 # ERR
+      a = 10 # ERR GLOBAL変数への代入
    def fuc2() :
       global a
       a = 10 # OK
